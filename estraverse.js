@@ -145,7 +145,9 @@
         VariableDeclarator: 'VariableDeclarator',
         WhileStatement: 'WhileStatement',
         WithStatement: 'WithStatement',
-        YieldExpression: 'YieldExpression'
+        YieldExpression: 'YieldExpression',
+        FieldDefinition: 'FieldDefinition',
+        PrivateName: 'PrivateName'
     };
 
     VisitorKeys = {
@@ -221,7 +223,9 @@
         VariableDeclarator: ['id', 'init'],
         WhileStatement: ['test', 'body'],
         WithStatement: ['object', 'body'],
-        YieldExpression: ['argument']
+        YieldExpression: ['argument'],
+        FieldDefinition: ['key', 'value'],
+        PrivateName: []
     };
 
     // unique id
@@ -390,7 +394,7 @@
     function isProperty(nodeType, key) {
         return (nodeType === Syntax.ObjectExpression || nodeType === Syntax.ObjectPattern) && 'properties' === key;
     }
-  
+
     function candidateExistsInLeaveList(leavelist, candidate) {
         for (var i = leavelist.length - 1; i >= 0; --i) {
             if (leavelist[i].node === candidate) {

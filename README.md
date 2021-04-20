@@ -1,3 +1,7 @@
+## `estraverse` fork for `jamin-estraverse` package
+
+Support `FieldDefinition` and `PrivateName`.
+
 ### Estraverse [![Build Status](https://secure.travis-ci.org/estools/estraverse.svg)](http://travis-ci.org/estools/estraverse)
 
 Estraverse ([estraverse](http://github.com/estools/estraverse)) is

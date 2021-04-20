@@ -1,9 +1,9 @@
 {
-  "name": "estraverse",
+  "name": "jamin-estraverse",
   "description": "ECMAScript JS AST traversal functions",
   "homepage": "https://github.com/estools/estraverse",
   "main": "estraverse.js",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "engines": {
     "node": ">=4.0"
   },
